@@ -6,8 +6,10 @@ It's single purpose is to make it a little easier to work with ReSharper's test 
 
 This extension will add a few new buttons to the unit test session toolbar. Normally, they will appear to be disabled, but when you select a failing acceptance test, they will enable, allowing you to easily diff the results, edit the gold or temp file, or update the gold. The diff will appear in Visual Studio's diff viewer, and the files will be opened to edit in Visual Studio windows.
 
+
 ![Diff temp and gold files with Visual Studio's diff viewer](images/diff_gold.gif)
 
+Install it from the ReSharper Extension Manager.
 
 ### How does it work? ###
 
@@ -58,3 +60,10 @@ You can even set these from within the NuGet PowerShell console, but remember to
 
     $env:DIFF=sgdm
     $env:DIFF_PARAMETERS= -t1 '`$plabel1' -t2 '`$clabel' `$parent `$child
+
+### Acknowledgements ###
+
+The icon is licensed under Creative Commons Attribution:
+
+    Gold by Eli Ratner from The Noun Project
+
