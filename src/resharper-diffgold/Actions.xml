@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<actions xmlns="urn:shemas-jetbrains-com:actions-xml">
+  <insert group-id="UnitTestSession.ActionBar" position="after" anchor-id="UnitTestSession.Time">
+    <separator/>
+    <action id="DiffGold.DiffGold" text="Diff gold and temp files" />
+    <action id="DiffGold.EditGold" text="Edit gold file" />
+    <action id="DiffGold.EditTemp" text="Edit temp file" />
+    <action id="DiffGold.UpdateGold" text="Update gold file" />
+  </insert>
+</actions>
