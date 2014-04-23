@@ -5,7 +5,7 @@ using JetBrains.UI.Icons;
 using JetBrains.UI.Resources;
 using JetBrains.Util;
 
-namespace CitizenMatt.ReSharper.Plugins.DiffGold
+namespace CitizenMatt.ReSharper.DiffGold
 {
     [ActionHandler("DiffGold.EditGold")]
     public class EditGoldAction : GoldActionBase

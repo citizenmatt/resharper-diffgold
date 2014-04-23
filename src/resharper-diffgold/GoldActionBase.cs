@@ -10,7 +10,7 @@ using JetBrains.ReSharper.UnitTestFramework;
 using JetBrains.UI.Icons;
 using JetBrains.Util;
 
-namespace CitizenMatt.ReSharper.Plugins.DiffGold
+namespace CitizenMatt.ReSharper.DiffGold
 {
     public abstract class GoldActionBase : IActionHandler
     {

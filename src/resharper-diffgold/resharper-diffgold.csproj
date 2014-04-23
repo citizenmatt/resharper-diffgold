@@ -9,8 +9,8 @@
     <ProjectGuid>{E27C375F-94F0-4A7C-BEEE-B471385FC189}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CitizenMatt.ReSharper.Plugins.DiffGold</RootNamespace>
-    <AssemblyName>CitizenMatt.ReSharper.Plugins.DiffGold</AssemblyName>
+    <RootNamespace>CitizenMatt.ReSharper.DiffGold</RootNamespace>
+    <AssemblyName>CitizenMatt.ReSharper.DiffGold.8.2</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

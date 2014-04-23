@@ -5,7 +5,7 @@ using JetBrains.ReSharper.Feature.Services.Resources;
 using JetBrains.UI.Icons;
 using JetBrains.Util;
 
-namespace CitizenMatt.ReSharper.Plugins.DiffGold
+namespace CitizenMatt.ReSharper.DiffGold
 {
     [ActionHandler("DiffGold.EditTemp")]
     public class EditTempAction : GoldActionBase

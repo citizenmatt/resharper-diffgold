@@ -1,7 +1,7 @@
 using JetBrains.VsIntegration.Application;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace CitizenMatt.ReSharper.Plugins.DiffGold
+namespace CitizenMatt.ReSharper.DiffGold
 {
     [WrapVsInterfaces]
     public class ExposeVsDifferenceService : IExposeVsServices
