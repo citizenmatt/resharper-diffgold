@@ -3,11 +3,12 @@
   <metadata>
     <id>DiffGold</id>
     <title>DiffGold</title>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>Matt Ellis</authors>
     <owners>Matt Ellis</owners>
     <summary>Diff results from ReSharper's acceptance test framework in Visual Studio's diff viewer</summary>
     <description>Adds buttons to the unit test session toolbar to edit and diff results files from ReSharper's acceptance test framework. Diffs are shown using Visual Studio's built in diff viewer</description>
+    <releaseNotes>&#8226; Handles spaces in path names</releaseNotes>
     <projectUrl>https://github.com/citizenmatt/resharper-diffgold</projectUrl>
     <licenseUrl>https://raw.github.com/citizenmatt/resharper-diffgold/master/license.txt</licenseUrl>
     <iconUrl>https://raw.github.com/citizenmatt/resharper-diffgold/master/gold_icon.png</iconUrl>
