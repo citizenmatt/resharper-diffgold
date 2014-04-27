@@ -14,9 +14,9 @@ namespace CitizenMatt.ReSharper.DiffGold
 {
     public abstract class GoldActionBase : IActionHandler
     {
-        private static readonly Regex GoldRegex = new Regex(@"^Data.GoldFile\s+=\s+file:///(?<path>.+?)\#.+?$",
+        private static readonly Regex GoldRegex = new Regex(@"^Data.GoldFile\s+=\s+(?<path>file:///.+?)\#.+?$",
             RegexOptions.Compiled | RegexOptions.Multiline | RegexOptions.Singleline);
-        private static readonly Regex TempRegex = new Regex(@"^Data.TempFile\s+=\s+file:///(?<path>.+?)\#.+?$",
+        private static readonly Regex TempRegex = new Regex(@"^Data.TempFile\s+=\s+(?<path>file:///.+?)\#.+?$",
             RegexOptions.Compiled | RegexOptions.Multiline | RegexOptions.Singleline);
 
         public bool Update(IDataContext context, ActionPresentation presentation, DelegateUpdate nextUpdate)
@@ -67,7 +67,12 @@ namespace CitizenMatt.ReSharper.DiffGold
         private static FileSystemPath GetPath(Regex regex, TaskException taskException)
         {
             var match = regex.Match(taskException.Message);
-            return !match.Success ? FileSystemPath.Empty : FileSystemPath.TryParse(match.Groups["path"].Value);
+            if (!match.Success)
+                return FileSystemPath.Empty;
+            Uri uri;
+            if (!Uri.TryCreate(match.Groups["path"].Value, UriKind.Absolute, out uri))
+                return FileSystemPath.Empty;
+            return FileSystemPath.TryParse(uri.LocalPath);
         }
 
         protected abstract IconId IconId { get; }
